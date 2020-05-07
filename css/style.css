@@ -151,6 +151,18 @@
     margin-bottom: 30px;
 }
 
+@keyframes team_animation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(-5px, -5px);
+    }
+    100% {
+        transform: translate(-10px, -10px);
+    }
+}
+
 .team_card {
     text-align: center;
     position: relative;
@@ -158,7 +170,11 @@
 }
 
 .team_card:hover {
-    transform: translate(-10px, -10px);
+    animation-name: team_animation;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
     cursor: pointer;
 }
 
@@ -187,10 +203,6 @@
     opacity: 0;
     top: 0;
     left: 0;
-
-    transition-property: opacity;
-    transition-duration: .2s;
-    transition-timing-function: linear;
 }
 
 .overlay_help {
@@ -206,7 +218,6 @@
   visibility: visible;
   cursor: pointer;
   box-shadow: 10px 10px 0 0 #95e1d3;
-  transform: translate(-10px, -10px);
 }
 
 .social_icons {
@@ -280,29 +291,3 @@
     font-size: 15px;
     color: #cccccc;
 }
-/* КНОПКА */
-
-.Rectangle_26 {
-    background-color: rgb(149, 225, 211);
-    position: absolute;
-    left: 1410px;
-    top: 1615px;
-    width: 150px;
-    height: 40px;
-    z-index: 6;
-  }
-  
-  .Subscribe {
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: center;
-    position: absolute;
-    left: 1441.134px;
-    top: 1627.1px;
-    z-index: 7;
-  }
-  
