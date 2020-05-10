@@ -43,6 +43,7 @@
     font-weight: 400;
     font-size: 14px;
     color: #95e1d3;
+    padding-bottom: 10px;
 
     transition-property: all;
     transition-duration: .2s;
@@ -110,6 +111,26 @@
     margin-bottom: 98px;
 }
 
+.every_service h3{
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+  
+
+.every_service p{
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+
 .icon_first {
     background-image: url(../img/ALARM1.png);
 }
@@ -140,17 +161,6 @@
     line-height: 1.6;
 }
 
-.team_cards_set {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 84px;
-}
-
-.card_holder img{
-    margin-bottom: 30px;
-}
-
 @keyframes team_animation {
     0% {
         transform: translate(0px, 0px);
@@ -163,18 +173,28 @@
     }
 }
 
-.team_card {
-    text-align: center;
-    position: relative;
+.team_cards_set {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 84px;
 }
 
-.team_card:hover {
+.team_card {
+    text-align: center;
+    margin-bottom: 84px;
+}
+
+.card_holder {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.card_holder:hover {
     animation-name: team_animation;
     animation-duration: .2s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-
     cursor: pointer;
 }
 
@@ -203,14 +223,9 @@
     opacity: 0;
     top: 0;
     left: 0;
-}
-
-.overlay_help {
-    width: 380px;
-    height: 72px;
-    position: absolute;
-    top: 500px;
-    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay:hover {
@@ -222,12 +237,10 @@
 
 .social_icons {
     display: flex;
-    justify-content: center;
-    transform: translateY(235px);
+    list-style: none;
 }
 
 .social_list_icon { 
-    list-style: none;
     width: 56px;
     height: 56px;
     background-repeat: no-repeat;
@@ -241,6 +254,7 @@
     transition-timing-function: linear; 
 }
 
+
 .icon_fb {background-image: url(../img/facebook.png);}
 .icon_tw {background-image: url(../img/twitter.png);}
 .icon_pin {background-image: url(../img/pinterest.png);}
@@ -249,10 +263,13 @@
 .social_list_icon:hover {
     background-color: #95e1d3;
 }
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 .footer_container {
     width: 1200px;
-    margin: 0 auto;
     padding: 0px;
     display: flex;
     justify-content: space-between;
@@ -289,5 +306,5 @@
     font-style: italic;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    color: #cccccc;
+    color: #000000;
 }
