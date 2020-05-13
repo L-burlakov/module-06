@@ -190,6 +190,10 @@
     margin-bottom: 30px;
 }
 
+.card_holder img {
+    display: ;
+}
+
 .card_holder:hover {
     animation-name: team_animation;
     animation-duration: .2s;
@@ -218,8 +222,8 @@
 .overlay {
     position: absolute;
     background-image: linear-gradient(180deg, rgba(243,129,129,.9), rgba(252,227,138,.9));
-    width: 380px;
-    height: 470px;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     top: 0;
     left: 0;
